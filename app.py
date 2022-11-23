@@ -27,5 +27,5 @@ def exibir_posts():
     resultado = g.bd.execute(sql)
 
     post = {"titulo":"Meu Título", "texto":"Primeiro texto","data_criacao":"23/11/2022"}
-    return render_template("hello.html", post = post)
+    return render_template("hello.html", post = posts)
 
