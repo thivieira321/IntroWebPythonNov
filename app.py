@@ -1,6 +1,6 @@
 from flask import Flask, render_template, g
 import sqlite3
-gi
+
 app = Flask("Olá Mundo")
 
 DATABASE = "banco.bd"
