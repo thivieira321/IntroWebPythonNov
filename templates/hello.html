@@ -3,7 +3,14 @@
     <title>Alunos</title>
 
     <body>
-        <h1>Alunos</h1>
+        {% for nomeIt in nome}
+            <i><h1>Olá
+        {% if not nome %}
+	        Visitante Desconhecido
+        {% else %}
+	        {{ nome }}
+        {% endif %}
+</i></h1>
         <h3>Oi Alunos!</h3>
     </body>
 </html>
