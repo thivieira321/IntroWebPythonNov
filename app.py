@@ -26,6 +26,6 @@ def exibir_posts():
     sql = "SELECT titulo, texto, data_criacao FROM posts ORDER BY id DESC"
     resultado = g.bd.execute(sql)
 
-    posts = {"titulo":"Meu Título", "texto":"Primeiro texto","data_criacao":"23/11/2022"}
-    return render_template("hello.html", post = posts)
+    exibir_posts = {"titulo":"Meu Título", "texto":"Primeiro texto","data_criacao":"23/11/2022"}
+    return render_template("hello.html", posts = post)
 
